@@ -50,7 +50,11 @@
         <br>
         {% endif %}
         {% if site.affiliation %}
+        {% if site.affiliation_link %}
         <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+        {% else %}
+        <autocolor>{{ site.affiliation }}</autocolor>
+        {% endif %}
         <br>
         {% endif %}
         {% if site.email %}
