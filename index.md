@@ -2,29 +2,33 @@
 layout: homepage
 ---
 
-## About Me
+<p class="eyebrow">Economics researcher in Vietnam</p>
 
-I am a Research Analyst based in Hanoi, Vietnam, working with the Development and Policies Research Center (DEPOCEN). My work supports applied research through enterprise surveys, quantitative data collection, and analysis.
+## About
 
-I am interested in research that turns high-quality data into practical evidence for development and policy decisions. I recently completed my bachelor's degree and am building experience across research operations and applied data analysis.
+I am an early-career researcher passionate about development and health economics, and evidence-based policy research. I am currently a Research Intern & Assistant at DEPOCEN, where I support applied research and data-driven policy work.
 
-## Research & Professional Interests
+I hold a B.A. in Development Economics from the National Economics University (NEU), completed in 2026. I am interested in using rigorous research and clear communication to turn data into useful evidence for policy decisions.
 
-- **Development and policy research:** evidence that informs inclusive economic development.
-- **Enterprise surveys:** fieldwork coordination, questionnaire implementation, and data quality.
-- **Quantitative analysis:** clear, reproducible analysis of survey and administrative data.
+## Research Interests
 
-## Current Work
+- **Development economics**
+- **Health economics**
+- **Evidence-based policy research**
 
-- Supporting research activities for LINC/TAFSE, including enterprise survey work and quantitative data analysis.
-- Developing practical workflows for collecting, cleaning, and documenting research data.
+## Current Focus
 
-## Tools
+I am building practical research experience through quantitative data work, survey-based research, and reproducible analytical workflows. I work primarily with Stata, Python, and Survey Solutions.
 
-- **Stata** for statistical analysis and data management.
-- **Python** for data preparation and reproducible workflows.
-- **Survey Solutions** for digital survey design and field data collection.
+## Education
 
-## Contact
+**B.A. in Development Economics**<br>
+National Economics University (NEU), 2026
 
-The best way to connect for now is through [GitHub](https://github.com/KhanhNguyen174). This site will be updated as new projects and professional materials become available.
+## Beyond Research
+
+Outside research, I enjoy travelling and learning from new places and cultures.
+
+## Get in Touch
+
+I am open to research assistant, research analyst, and short-term research collaboration opportunities. Please feel free to contact me by [email](mailto:nguyennamkhanh14@gmail.com), or connect through [LinkedIn](https://www.linkedin.com/in/nguyen-nam-khanh-529463326/) and [GitHub](https://github.com/KhanhNguyen174).

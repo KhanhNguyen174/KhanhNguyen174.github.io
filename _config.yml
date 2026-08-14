@@ -1,23 +1,26 @@
 # Basic Information
-title: Khanh Nguyen
-position: Research Analyst
-affiliation: Development and Policies Research Center (DEPOCEN)
+title: Nam Khanh Nguyen
+position: Research Intern & Assistant
+affiliation: DEPOCEN, Hanoi, Vietnam
+email: nguyennamkhanh14@gmail.com
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: development economics, data analysis, enterprise surveys, Vietnam
-description: Personal website of Khanh Nguyen, a Research Analyst at DEPOCEN.
+description: Personal website of Nam Khanh Nguyen, an early-career researcher in development and health economics.
 canonical: https://khanhnguyen174.github.io/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
 github_link: https://github.com/KhanhNguyen174
+linkedin: https://www.linkedin.com/in/nguyen-nam-khanh-529463326/
+cv_link: /assets/files/Khanh-Nguyen-CV.pdf
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+avatar: /assets/img/nam-khanh-nguyen.jpg
+favicon: /assets/img/favicon.png
+favicon_dark: /assets/img/favicon-dark.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."

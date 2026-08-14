@@ -588,6 +588,56 @@ footer {
   cursor: pointer;
 }
 
+.image.avatar img {
+  width: 8rem;
+  height: 8rem;
+  padding: 0;
+  object-fit: cover;
+  object-position: 50% 43%;
+}
+
+.site-nav {
+  display: grid;
+  gap: 0.15rem;
+  margin: 1.5rem 0;
+}
+
+.site-nav a {
+  border-left: 2px solid transparent;
+  color: #595959;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.55rem;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  border-left-color: #043361;
+  color: #043361;
+}
+
+.eyebrow {
+  color: #043361;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-nav a {
+    color: #dadbdf;
+  }
+
+  .site-nav a:hover,
+  .site-nav a.active,
+  .eyebrow {
+    border-left-color: #3eb7f0;
+    color: #3eb7f0;
+  }
+}
+
 .bibref {
   font-size: 70%;
   margin-top: 10px;
