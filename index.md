@@ -18,7 +18,7 @@ I hold a B.A. in Development Economics from the National Economics University (N
 
 ## Current Focus
 
-I am building practical research experience through quantitative data work, survey-based research, and reproducible analytical workflows. I work primarily with Stata, Python, and Survey Solutions.
+I am building practical research experience through quantitative data work, survey-based research, and reproducible analytical workflows. I work primarily with Stata, R, Python, and survey tools such as Survey Solutions and ODK.
 
 ## Education
 
