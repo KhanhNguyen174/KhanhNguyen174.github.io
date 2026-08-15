@@ -11,6 +11,8 @@ const camera = new THREE.PerspectiveCamera(56, 1, 0.1, 300);
 const clock = new THREE.Clock();
 const loader = new GLTFLoader();
 let grassShader;
+let scrollProgress = 0;
+let targetScrollProgress = 0;
 
 scene.background = new THREE.Color('#030907');
 scene.fog = new THREE.FogExp2('#030907', 0.025);
@@ -112,7 +114,20 @@ loader.load('./island.glb', (island) => {
   });
 });
 
+window.addEventListener('message', (event) => {
+  if (!event.data || event.data.type !== 'grass-scroll') return;
+
+  targetScrollProgress = Math.min(Math.max(event.data.scrollY / 1800, 0), 1);
+});
+
 function render() {
+  scrollProgress += (targetScrollProgress - scrollProgress) * 0.06;
+  camera.position.set(
+    -16 + scrollProgress * 4,
+    10 - scrollProgress * 2,
+    -14 + scrollProgress * 4
+  );
+  camera.lookAt(0, scrollProgress * 1.2, 0);
   if (grassShader) grassShader.uniforms.uTime.value = clock.getElapsedTime();
   renderer.render(scene, camera);
   requestAnimationFrame(render);

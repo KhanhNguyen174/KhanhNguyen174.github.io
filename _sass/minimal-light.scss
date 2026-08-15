@@ -653,13 +653,6 @@ html[data-theme="dark"] #dark-grass-layer iframe {
   width: 100%;
 }
 
-html[data-theme="dark"] section {
-  background: rgba(3, 9, 7, 0.68);
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  padding: 2rem;
-}
-
 html[data-theme="dark"] .theme-toggle {
   border-color: #79aa7c;
   color: #d8f3d8;
@@ -738,6 +731,17 @@ html[data-theme="light"] .eyebrow {
     border-left-color: #3eb7f0;
     color: #3eb7f0;
   }
+}
+
+html[data-theme="dark"] .site-nav a.active,
+html[data-theme="dark"] .site-nav a.active:hover,
+html[data-theme="dark"] .social-icons a {
+  color: #fff !important;
+}
+
+html[data-theme="dark"] .site-nav a.active,
+html[data-theme="dark"] .site-nav a.active:hover {
+  border-left-color: #fff;
 }
 
 .bibref {

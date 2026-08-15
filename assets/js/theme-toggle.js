@@ -9,6 +9,15 @@
     return !reducedMotion.matches && window.innerWidth > 700 && 'WebGLRenderingContext' in window;
   }
 
+  function syncGrassScroll() {
+    if (!grassLayer || !grassLayer.firstElementChild) return;
+
+    grassLayer.firstElementChild.contentWindow.postMessage({
+      type: 'grass-scroll',
+      scrollY: window.scrollY || window.pageYOffset
+    }, window.location.origin);
+  }
+
   function updateGrass(theme) {
     if (!grassLayer) return;
 
@@ -18,6 +27,7 @@
         frame.src = grassLayer.getAttribute('data-src');
         frame.title = 'Animated grass background';
         frame.tabIndex = -1;
+        frame.addEventListener('load', syncGrassScroll);
         grassLayer.appendChild(frame);
       }
       return;
@@ -60,4 +70,6 @@
   reducedMotion.addEventListener('change', function () {
     updateGrass(root.getAttribute('data-theme'));
   });
+
+  window.addEventListener('scroll', syncGrassScroll, { passive: true });
 })();
