@@ -14,6 +14,16 @@
     <link rel="canonical" href="{{ site.canonical }}"/>
     {% endif %}
 
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem('theme');
+          var theme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (error) {}
+      })();
+    </script>
+
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark | relative_url }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon | relative_url }}" type="image/png" />
     <script src="{{ "/assets/js/favicon-switcher.js" | relative_url }}" type="application/javascript"></script>
@@ -36,6 +46,7 @@
 
   </head>
   <body>
+    <div id="dark-grass-layer" data-src="{{ "/assets/grass/index.html" | relative_url }}" aria-hidden="true"></div>
     <div class="wrapper">
       <header>
         
@@ -100,6 +111,10 @@
         {% endif %}
         </div>
 
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <span aria-hidden="true">◐</span>
+        </button>
+
       </header>
       <section>
 
@@ -127,5 +142,6 @@
       ga('send', 'pageview');
     </script>
     {% endif %}
+    <script src="{{ "/assets/js/theme-toggle.js" | relative_url }}" type="application/javascript"></script>
   </body>
 </html>

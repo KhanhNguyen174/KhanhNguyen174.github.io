@@ -588,6 +588,108 @@ footer {
   cursor: pointer;
 }
 
+#dark-grass-layer {
+  display: none;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid #b8c3b8;
+  border-radius: 50%;
+  color: #043361;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 2.1rem;
+  margin-top: 1.3rem;
+  padding: 0;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: 2.1rem;
+}
+
+.theme-toggle:hover {
+  background: #edf3ed;
+  transform: rotate(18deg);
+}
+
+html[data-theme="dark"] body {
+  background: #030907;
+  color: #d9e4da;
+}
+
+html[data-theme="dark"] a,
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] .eyebrow {
+  color: #a9dfad;
+}
+
+html[data-theme="dark"] autocolor,
+html[data-theme="dark"] strong {
+  color: #d9e4da;
+}
+
+html[data-theme="dark"] .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+html[data-theme="dark"] #dark-grass-layer {
+  display: block;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+}
+
+html[data-theme="dark"] #dark-grass-layer iframe {
+  border: 0;
+  height: 100%;
+  opacity: 0.78;
+  width: 100%;
+}
+
+html[data-theme="dark"] section {
+  background: rgba(3, 9, 7, 0.68);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  border-color: #79aa7c;
+  color: #d8f3d8;
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(157, 211, 141, 0.18);
+}
+
+html[data-theme="light"] body {
+  background: #fff;
+  color: #727272;
+}
+
+html[data-theme="light"] autocolor,
+html[data-theme="light"] strong {
+  color: #595959;
+}
+
+html[data-theme="light"] a,
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4,
+html[data-theme="light"] h5,
+html[data-theme="light"] h6,
+html[data-theme="light"] .eyebrow {
+  color: #043361;
+}
+
 .image.avatar img {
   width: 8rem;
   height: 8rem;
